@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import com.example.wrapper.config.FooController;
 
-@FeignClient(value = "translator-service", contextId = "translatorClient", configuration = FooController.class)
+//@FeignClient(value = "translator-service", configuration = FooController.class)
+@FeignClient(value = "xyz-service", configuration = FooController.class)
 public interface TranslatorClient {
 	
 	// value = "translator-service"
