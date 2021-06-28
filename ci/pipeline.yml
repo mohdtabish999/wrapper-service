@@ -29,5 +29,5 @@ jobs:
     file: source-code/ci/build.yml
   - put: cf
     params:
-      manifest: source-code/manifest.yml
+      manifest: source-code/ci/manifest.yml
       path: build-output/wrapper-service-0.0.1-SNAPSHOT.jar
